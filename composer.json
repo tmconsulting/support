@@ -1,0 +1,40 @@
+{
+    "name": "lib/support",
+    "description": "Helpers package.",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "roquie",
+            "email": "roquie0@gmail.com"
+        }
+    ],
+    "require": {
+      "php": ">=7.0.0",
+      "ext-mbstring": "*",
+      "illuminate/support": "5.2.*"
+    },
+    "require-dev": {
+        "illuminate/support": "5.2.*",
+        "phpunit/phpunit": "^5.4@dev",
+        "symfony/var-dumper": "^3.0",
+        "phpunit/phpunit-mock-objects": "^3.2@dev",
+        "phpunit/php-code-coverage": "^4@dev"
+    },
+    "autoload": {
+      "psr-4": {
+        "TMC\\Support\\": "src"
+      },
+      "files": [
+        "src/functions/globally.php",
+        "src/functions/array.php",
+        "src/functions/num.php",
+        "src/functions/str.php",
+        "src/functions/mongo.php",
+        "src/functions/xml.php",
+        "src/functions/xmlstr_to_array.php"
+      ]
+    },
+    "suggest": {
+       "ext-mongodb": "Для использования Mongo хэлпера должно быть установлено расширение mongodb"
+    }
+}
