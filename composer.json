@@ -1,7 +1,7 @@
 {
-    "name": "lib/support",
+    "name": "tmconsulting/support",
     "description": "Helpers package.",
-    "license": "proprietary",
+    "license": "MIT",
     "authors": [
         {
             "name": "roquie",
@@ -11,14 +11,14 @@
     "require": {
       "php": ">=7.0.0",
       "ext-mbstring": "*",
-      "illuminate/support": "5.2.*"
+      "illuminate/support": "5.5.*"
     },
     "require-dev": {
-        "illuminate/support": "5.2.*",
-        "phpunit/phpunit": "^5.4@dev",
-        "symfony/var-dumper": "^3.0",
-        "phpunit/phpunit-mock-objects": "^3.2@dev",
-        "phpunit/php-code-coverage": "^4@dev"
+        "illuminate/support": "5.5.*",
+        "phpunit/phpunit": "^6",
+        "symfony/var-dumper": "^3",
+        "phpunit/phpunit-mock-objects": "^4",
+        "phpunit/php-code-coverage": "^5"
     },
     "autoload": {
       "psr-4": {

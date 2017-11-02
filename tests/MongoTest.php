@@ -10,7 +10,7 @@
 
 use MongoDB\BSON\ObjectID;
 
-class MongoTest extends PHPUnit_Framework_TestCase
+class MongoTest extends \PHPUnit\Framework\TestCase
 {
     protected $idOne = '56e1da733b5d9e5f855b2781';
     protected $idTwo = '56e1da6d3b5d9e5f7e0f2b21';

@@ -7,9 +7,9 @@
  * Date: 10.03.16
  * Project: support.lc
  */
-class StrTest extends PHPUnit_Framework_TestCase
+class StrTest extends \PHPUnit\Framework\TestCase
 {
-    public function testToBoolProvider()
+    public function toBoolProvider()
     {
         return [
             [true, true],
@@ -27,7 +27,7 @@ class StrTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @dataProvider testToBoolProvider
+     * @dataProvider toBoolProvider
      * @param $expected
      * @param $actual
      */
@@ -51,7 +51,7 @@ class StrTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('дней', $many);
     }
 
-    public function testShortNameProvider()
+    public function shortNameProvider()
     {
         return [
             ['Путин В. С.', 'Путин', 'Владимир', 'Сергеевич'],
@@ -64,7 +64,7 @@ class StrTest extends PHPUnit_Framework_TestCase
     }
 
     /**
-     * @dataProvider testShortNameProvider
+     * @dataProvider shortNameProvider
      * @param $expected
      * @param $lastName
      * @param $firstName

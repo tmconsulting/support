@@ -7,7 +7,7 @@
  * Date: 10.03.16
  * Project: support.lc
  */
-class ArrTest extends PHPUnit_Framework_TestCase
+class ArrTest extends \PHPUnit\Framework\TestCase
 {
     public function testFlipKey()
     {
@@ -37,7 +37,7 @@ class ArrTest extends PHPUnit_Framework_TestCase
     public function testCharset()
     {
         $cp = iconv('UTF-8', 'CP1251', 'тралала');
-        
+
         $object = new stdClass();
         $object->value = 'mem';
         $object->pap   = 'lel';
@@ -49,7 +49,7 @@ class ArrTest extends PHPUnit_Framework_TestCase
         $object->value = 'mem';
         $object->pap   = 'lel';
         $object->gog   = 'тралала';
-        
+
         $expected = ['foo', 'тралала', 'baz' => ['bab' => ['hah' => 'тралала', 'faf' => $object]]];
 
         $this->assertEquals($expected, arr\charset($array));

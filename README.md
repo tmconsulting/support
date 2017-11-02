@@ -34,3 +34,8 @@ Support
 Tests
 -------
 `phpunit`
+
+License
+-------
+MIT
+

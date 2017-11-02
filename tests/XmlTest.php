@@ -7,7 +7,7 @@
  * Date: 25.04.16
  * Project: support.lc
  */
-class XmlTest extends PHPUnit_Framework_TestCase
+class XmlTest extends \PHPUnit\Framework\TestCase
 {
 
     public function testDump()
@@ -45,7 +45,7 @@ class XmlTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($xml, $content);
     }
 
-    public function testIsValidXmlProvider()
+    public function isValidXmlProvider()
     {
         return [
             ['<root><name>sample_name</name></root>', true],
@@ -56,7 +56,7 @@ class XmlTest extends PHPUnit_Framework_TestCase
     }
     
     /**
-     * @dataProvider testIsValidXmlProvider
+     * @dataProvider isValidXmlProvider
      * @param $value
      * @param $expected
      */

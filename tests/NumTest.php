@@ -7,7 +7,7 @@
  * Project: support.lc
  */
 
-class NumTest extends PHPUnit_Framework_TestCase
+class NumTest extends \PHPUnit\Framework\TestCase
 {
     public function testHumanBytes()
     {
